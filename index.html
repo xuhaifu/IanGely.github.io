@@ -1,2 +1,108 @@
-世人谓我恋长安，<br/>
-其实质恋长安某
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href=""/>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<style type="text/css">
+body{ margin:0; padding:0; font-size:12px; font-family:"微软雅黑","宋体"; color: #414141;}
+ul,li,ol,dl,dd,dt,p,span,table,h1,h2,h3,h4,form{ margin:0; padding:0; list-style:none;}
+form,input,img,textarea{ vertical-align:middle;}
+img{ border:none;}
+a{ text-decoration:none; color:#333;}
+a:hover{  text-decoration:none;}
+.clear{ clear:both;}
+body{
+	width: 100%;
+}
+
+/*内容*/
+.wrap{
+	width: 1200px;
+	margin: 0px auto;
+}
+.body_bg{
+	width: 500px;
+	height: 700px;
+	background: url(bg_mb.jpg) no-repeat;
+	background-size: 100% 100%;
+	margin: 0px auto;
+	display: none;
+}
+.wrap_div{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	text-align: center;
+}
+.heartbeat{
+/*-webkit-transform:rotate(0deg);*/
+/*-webkit-backface-visibility:visible;*/
+-webkit-transform-origin:center center;
+-webkit-animation:heartbeat 1.5s 0s infinite linear ;
+margin: 0px auto;
+display: block;
+margin-top: 50px;
+}
+@-webkit-keyframes heartbeat{
+0%{
+-webkit-transform:scaleX(1) scaleY(1);
+} 
+50%{
+-webkit-transform:scaleX(1.1) scaleY(1.1);
+} 
+100%{
+-webkit-transform:scaleX(1) scaleY(1);
+} 
+}
+.main{
+	padding: 170px 0 0 100px ;
+}
+.time_1{
+}
+.time_2{
+	width: 300px;
+	margin: 0px;
+	line-height: 30px;
+	font-size: 14px;
+	text-indent: 2em;
+}
+.time_3{
+	text-align: right;
+	width: 300px;
+	font-weight: bold;
+	display: block;
+}
+	</style>
+<script type="text/javascript">
+setTimeout(function(){
+	$('.wrap_div').fadeOut("slow");
+		setTimeout(function(){
+			$('.body_bg').fadeIn("slow");
+		},500);
+},3000);
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrap_div">
+			<div class="heartbeat">
+				<img src="one_01.jpg" width="499px" />
+			</div>
+		</div>
+		<div class="body_bg">
+			<div class="main">
+				<h2 class="time_1">国雷童鞋：</h2>
+				<div class="time_2">生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！生日快乐！</div>
+				<div class="time_3">2014.11.14<br>信石</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
